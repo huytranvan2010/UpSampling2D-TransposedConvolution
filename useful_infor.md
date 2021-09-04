@@ -49,6 +49,8 @@ $$p_{bottom} = p_{height} - p_{top}$$
 - Với `strides = 1` chúng ta có output dimension bằng với input dimension
 - Với `stride > 1` chúng ta có **output dimension** nhỏ hơn so với input dimension và ở đây chúng ta cần tính zero padding vào các phía.
 
+Trong Tensorflow, nếu dùng transposed convolution với paddding = 'same' thì output size = input size * strides. Có thời gian tìm hiểu thêm về cái này.
+
 # Tài liệu tham khảo
 1. https://stackoverflow.com/questions/37674306/what-is-the-difference-between-same-and-valid-padding-in-tf-nn-max-pool-of-t
 
